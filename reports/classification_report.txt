@@ -1,0 +1,14 @@
+              precision    recall  f1-score   support
+
+     cekince       0.53      0.85      0.65        40
+       istek       0.95      0.53      0.68        40
+   kizginlik       1.00      0.85      0.92        40
+       merak       0.83      1.00      0.91        40
+minnettarlik       0.98      1.00      0.99        40
+       saygi       0.97      0.82      0.89        40
+        umut       0.84      0.80      0.82        40
+      uzuntu       1.00      0.97      0.99        40
+
+    accuracy                           0.85       320
+   macro avg       0.89      0.85      0.86       320
+weighted avg       0.89      0.85      0.86       320

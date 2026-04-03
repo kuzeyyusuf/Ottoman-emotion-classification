@@ -28,6 +28,7 @@ The model predicts the following 8 emotions:
 
 ## Project Structure
 
+```
 intent_emotion_project/
 
 app.py  
@@ -41,10 +42,11 @@ test_real.csv
 emotion_model.pkl  
 
 reports/  
-classification_report.txt  
-sample_errors.csv  
-confusion_matrix.png  
-demo.png (optional)
+  classification_report.txt  
+  sample_errors.csv  
+  confusion_matrix.png  
+  demo.png (optional)
+```
 
 ## Model
 
@@ -66,8 +68,9 @@ Evaluation on a balanced test set:
 Accuracy: 0.856  
 Macro F1-score: 0.86  
 
-Classification Report:
+### Classification Report
 
+```
               precision    recall  f1-score   support
 
      cekince       0.53      0.85      0.65        40
@@ -82,6 +85,7 @@ minnettarlik       0.98      1.00      0.99        40
     accuracy                           0.86       320
    macro avg       0.89      0.86      0.86       320
 weighted avg       0.89      0.86      0.86       320
+```
 
 ## Key Findings
 
@@ -108,76 +112,37 @@ This is due to stylistic and semantic overlap in classical Turkish expressions.
 
 Run:
 
+```
 python train.py
+```
 
 This will:
 - train the model
 - evaluate on test data
-- generate reports:
-  - classification_report.txt
-  - sample_errors.csv
-  - confusion_matrix.png
+- generate reports
 
 ## CLI Prediction
 
 Run:
 
+```
 python predict.py
-
-Then enter a sentence manually.
+```
 
 ## Gradio Demo
 
 Run:
 
+```
 python app.py
-
-This launches a local web interface where you can:
-- input text
-- see predicted emotion
-- view ranked class scores
-
-## Demo (optional)
-
-If you add a screenshot to:
-
-reports/demo.png
-
-You can display it in the README like this:
-
-![Demo](reports/demo.png)
-
-## Confusion Matrix
-
-![Confusion Matrix](reports/confusion_matrix.png)
+```
 
 ## Installation
 
-It is recommended to use a virtual environment.
-
-Install dependencies:
-
+```
 python -m pip install -r requirements.txt
-
-## Why This Project Matters
-
-Emotion detection in Ottoman Turkish / Classical Turkish is challenging due to:
-
-- indirect expression style
-- formal and respectful language structure
-- overlap between intent and emotion
-- limited annotated datasets
-
-This project provides a baseline solution for this niche NLP problem.
-
-## Future Improvements
-
-- Transformer-based models (BERT)
-- Probability calibration
-- Explainability methods
-- Larger dataset
-- Deployment on platforms such as Hugging Face Spaces
+```
 
 ## Author
 
-This project was developed as a personal NLP portfolio project focused on emotion classification in Ottoman Turkish / Classical Turkish-style expressions.
+Personal NLP portfolio project.
